@@ -38,6 +38,17 @@ public class Main {
         for(Geometry g:arr){
             ((Point3D)g).printInfo();
         }
+        Point point15=new Point(2,5);
+        Line line1= new Line(point15, new Point(10,4));
+        Line line2= new Line (4,5,3,7);
+
+        System.out.println("Length of line is: "+line1.getLength());
+        System.out.println("Middle point of line2 is:");
+        line2.getMiddlePointOfLine().printInfo();
+        Triangle t1=new Triangle(new Point(3,3), new Point(4,7), new Point(5,3));
+        if(t1.isIsosceles()){
+            System.out.println("Triangle t1 is isosceles!");
+        }
 
     }
 }
